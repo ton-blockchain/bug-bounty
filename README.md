@@ -70,6 +70,8 @@ TON-EVM bridge [frontend](https://ton.org/bridge) - https://github.com/ton-block
 
 ## Third-party
 
-Third-party services on TON, such as https://tonkeeper.com, https://tonscan.org, https://tonwhales.com, https://getgems.io and others are also interested in finding bugs.
+Third-party TON services that you can find for example on https://ton.app are also interested in finding security bugs.
 
-Please contact them directly.
+In particular, popular products like https://tonkeeper.com, [@wallet](https://t.me/wallet), [@cryptobot](https://t.me/cryptobot), [@donate](https://t.me/donate), https://tonwhales.com, https://getgems.io,  https://disintar.io/, https://tonscan.org.
+
+Please contact them directly if you find a vulnerability.
