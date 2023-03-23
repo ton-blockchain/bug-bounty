@@ -28,21 +28,27 @@ Standard smart contracts - https://github.com/ton-blockchain/ton/tree/master/cry
 
 - Elector - `elector-code.fc`;
 
-- Multisig - `multisig-code.fc`;
-
 - Wallets - `simple-wallet-code.fc`, `wallet3-code.fc`;
 
 Wallet V4 and subscription smart contracts - https://github.com/ton-blockchain/wallet-contract. 
 
-TON-Ethereum bridge and TON-BSC bridge - https://github.com/ton-blockchain/bridge-func. 
+Multisig - https://github.com/ton-blockchain/multisig-contract
+
+TON-Ethereum Toncoin bridge and TON-BSC Toncoin bridge - https://github.com/ton-blockchain/bridge-func. 
+
+TON-Ethereum Token bridge - https://github.com/ton-blockchain/token-bridge-func. 
 
 Nominator pool - https://github.com/ton-blockchain/nominator-pool.
 
 Fungible, Non-Fungible, Semi-Fungible tokens - https://github.com/ton-blockchain/token-contract. 
 
+TON DNS - https://github.com/ton-blockchain/dns-contract
+
 ## Solidity 
 
-TON-Ethereum bridge and TON-BSC bridge - https://github.com/ton-blockchain/bridge-solidity.
+TON-Ethereum Toncoin bridge and TON-BSC Toncoin bridge - https://github.com/ton-blockchain/bridge-solidity.
+
+TON-Ethereum Token bridge - https://github.com/ton-blockchain/token-bridge-solidity.
 
 ## Python
 
@@ -57,6 +63,8 @@ Python SDK - https://github.com/toncenter/pytonlib.
 Note that the standard recommendations from the OWASP (e.g. adding the recommended HTTP headers) will not be highly appreciated or will rejected.
 
 The most valuable are real vulnerabilities and critical bugs.
+
+We do not accept reports about open IP addresses or open ports, if this does not lead to an attack (ddos is not considered in this case).
 
 Web Site - https://ton.org.
 
