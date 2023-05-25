@@ -20,6 +20,8 @@ https://github.com/ton-blockchain/ton.
 
 Catchain, Validator Node, Full Node, DHT Node, TonLib, FunC compiler, Fift compiler.
 
+The testnet branch is considered experimental and often undergoes tests and audits. We are interested in identifying problems at this stage, thus bugs in the testnet branch are accepted, in some cases report review maybe postponed till the end of audit/tests (you will be immediately notified upon report submission).
+
 ## Smart Contracts (FunC)
 
 Standard smart contracts - https://github.com/ton-blockchain/ton/tree/master/crypto/smartcont:
