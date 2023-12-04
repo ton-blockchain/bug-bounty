@@ -4,7 +4,7 @@ If you find a critical bug or vulnerability in the TON Blockchain (in the C++ co
 
 We are interested in critical vulnerabilities: crash, loss/theft of coins, etc.
 
-You can target a reward of up to $100,000 in Toncoins for vulnerability, depending on the severity.
+You can target a reward of up to $100,000 in Toncoins for vulnerability, depending on the severity; large bounties for severe vulnerabilities are given with 1 year lock-up.
 
 Let's perfect the safety and security of TON together!
 
