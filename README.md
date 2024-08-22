@@ -8,7 +8,7 @@ You can target a reward of up to $100,000 in Toncoins for vulnerability, dependi
 
 Let's perfect the safety and security of TON together!
 
-Send general reports to [@ton_bugs_bot](https://t.me/ton_bugs_bot). Reports about frontend should be sent to [hackenproof page](https://dashboard.hackenproof.com/ton/ton-web-products) (check Frontend section below).
+Send general reports to [@ton_bugs_bot](https://t.me/ton_bugs_bot). Reports about frontend should be sent to [hackenproof page]( https://dashboard.hackenproof.com/ton/ton-society) (check Frontend section below).
 
 _We reserve the right not to review some reports._
 
@@ -62,7 +62,7 @@ Python SDK - https://github.com/toncenter/pytonlib.
 
 ## Frontend
 
-All issues related to sites and frontend should be sent to [hackenproof page](https://dashboard.hackenproof.com/ton/ton-web-products).
+All issues related to sites and frontend should be sent to [hackenproof page]( https://dashboard.hackenproof.com/ton/ton-society).
 
 Note that the standard recommendations from the OWASP (e.g. adding the recommended HTTP headers) will not be highly appreciated or will rejected.
 
