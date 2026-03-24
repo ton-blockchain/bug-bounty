@@ -1,6 +1,6 @@
 # TON security bug bounty
 
-If you find a critical bug or vulnerability in the TON Blockchain (in the C++ code of the main repository) or TON main services (standard wallets, bridge, standard smart contracts), you can send its description and exploitation scenario and receive a reward.
+If you find a critical bug or vulnerability in the TON Blockchain (in the C++ code of the main repository) or TON main services (standard wallets, standard smart contracts), you can send its description and exploitation scenario and receive a reward.
 
 We are interested in critical vulnerabilities: crash, loss/theft of coins, etc.
 
@@ -36,21 +36,11 @@ Wallet V4 and subscription smart contracts - https://github.com/ton-blockchain/w
 
 Multisig - https://github.com/ton-blockchain/multisig-contract
 
-TON-Ethereum Toncoin bridge and TON-BSC Toncoin bridge - https://github.com/ton-blockchain/bridge-func. 
-
-TON-Ethereum Token bridge - https://github.com/ton-blockchain/token-bridge-func. 
-
 Nominator pool - https://github.com/ton-blockchain/nominator-pool.
 
 Fungible, Non-Fungible, Semi-Fungible tokens - https://github.com/ton-blockchain/token-contract. 
 
 TON DNS - https://github.com/ton-blockchain/dns-contract
-
-## Solidity 
-
-TON-Ethereum Toncoin bridge and TON-BSC Toncoin bridge - https://github.com/ton-blockchain/bridge-solidity.
-
-TON-Ethereum Token bridge - https://github.com/ton-blockchain/token-bridge-solidity.
 
 ## Python
 
@@ -77,8 +67,6 @@ Web Site - https://ton.org.
 JavaScript SDK - https://github.com/toncenter/tonweb.
 
 JavaScript Mnemonic SDK - https://github.com/toncenter/tonweb-mnemonic. 
-
-TON-EVM bridge [frontend](https://ton.org/bridge) - https://github.com/ton-blockchain/bridge.
 
 ## Third-party
 
