@@ -10,7 +10,9 @@ Let's perfect the safety and security of TON together!
 
 Send general reports to [@ton_bugs_bot](https://t.me/ton_bugs_bot). Reports about frontend should be sent to [hackenproof page](https://hackenproof.com/programs/ton-society) (check Frontend section below).
 
-_We reserve the right not to review some reports._
+_We reserve the right not to review some reports_
+
+kaka nashol bag  : [here](https://github.com/egoarka/ton-critical-bug/issues/1) 
 
 Priority list:
 
