@@ -12,6 +12,18 @@ Send general reports to [@ton_bugs_bot](https://t.me/ton_bugs_bot). Reports abou
 
 _We reserve the right not to review some reports._
 
+## Out of scope / not accepted cases
+
+The following are generally out of scope or will not be accepted without a clear escalation to a real security impact on normal network/service operation:
+
+- Issues that require the attacker to already control the local host, local files/libraries, runtime parameters, environment variables, startup flags, or other trusted operator inputs.
+- Client-side SDK misuse by the integrating application, including loading attacker-controlled local code/data, when no privilege boundary is crossed.
+- Reports against components not listed below, or against stubs / preliminary-testing implementations / deprecated components not intended for production use.
+- Input-validation, error-message, or status-code hygiene issues (for example 5xx vs 4xx/405) when the service remains healthy.
+- Crashes or odd behavior in local tools, debug-only paths, or other user-side workflows that do not affect normal node/service/blockchain operation.
+- Behavior with no realistic manifestation or exploitation path in normal network operation.
+- Long-known implementation or design peculiarities, unless you demonstrate a new security impact.
+
 Priority list:
 
 ## TON Blockchain Core (C++)
@@ -31,8 +43,10 @@ Standard smart contracts - https://github.com/ton-blockchain/ton/tree/master/cry
 - Network config - `config-code.fc`;
 
 - Elector - `elector-code.fc`;
+  - Known peculiarities of Elector are not bounty issues by themselves, including `max_stake`-related stake accounting/recovery behavior and recover-stake bounce semantics.
 
 - Wallets - `simple-wallet-code.fc`, `wallet3-code.fc`;
+  - Deleted-wallet redeploy/reuse behavior by itself is not considered a vulnerability; wallet deletion should be treated as final, and old externals are expected to expire via short `valid_until`.
 
 Wallet V4 and subscription smart contracts - https://github.com/ton-blockchain/wallet-contract. 
 
