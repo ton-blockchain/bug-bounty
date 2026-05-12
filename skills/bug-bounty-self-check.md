@@ -204,8 +204,16 @@ For assertions or crashes, report whether the crash appears assertion-based, deb
 
 If the bug is reachable only through a modified local file, CLI argument, local tool workflow, or other user-side operation, set final verdict to `REJECTED`.
 
+### 6. Unexpected behavior
 
-### 6. Validate bug bounty eligibility
+Some issues may relate to behavior that is counterintuitive or inconsistent with documentation. This does not automatically make the issue valid or invalid.
+
+For example, an opcode may appear, based on its short name, to behave in one way while actually behaving differently. Such an issue may be reported to the bug bounty, but the expected bounty and impact should be low unless the report demonstrates that the behavior is exploitable in practice right now, not only in theoretical scenarios.
+
+Issues based on assumptions from other networks or blockchains are not applicable to TON. For example, reports treating asynchronous non-atomic transaction traces as a vulnerability are not accepted, especially when the behavior is properly documented.
+
+
+### 7. Validate bug bounty eligibility
 
 Check:
 
@@ -232,7 +240,7 @@ Known peculiarities are not accepted as bounty issues unless the report demonstr
 
 Toncenter HTTP API and Toncenter indexer reports may be eligible for wrong balance or index data, authentication issues, private data exposure, or critical service bugs. Status-code hygiene such as 500 instead of 4xx/405 while the service remains healthy MUST be rejected.
 
-### 7. Validate report completeness
+### 8. Validate report completeness
 
 Check whether the original report contains:
 
@@ -259,7 +267,7 @@ If suggested remediation is missing, mark it as missing. Do not invent remediati
 
 If environment details are missing, mark them as missing. Do not substitute the agent's local environment as the researcher's environment.
 
-### 8. Detect common errors
+### 9. Detect common errors
 
 The agent MUST detect and flag:
 
