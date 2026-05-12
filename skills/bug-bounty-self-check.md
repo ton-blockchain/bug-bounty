@@ -288,6 +288,10 @@ The agent MUST detect and flag:
 
 ## Status, Verdict, Confidence, and Class
 
+### Report format
+Since the bug bounty bot only accepts reports in plain text, `.md`, or secret GitHub Gist link format, raise a warning if the submitted report uses a different format.
+
+
 ### Short status values
 
 Use exactly one of:
