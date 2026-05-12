@@ -78,11 +78,6 @@ We do not accept reports about open IP addresses or open ports, if this does not
 
 Web Site - https://ton.org.
 
-[Web Wallet](https://wallet.ton.org) and [Browser Extension](https://chrome.google.com/webstore/detail/ton-wallet/nphplpgoakhhjchkkhmiggakijnkhfnd) - https://github.com/toncenter/ton-wallet, 
-
-JavaScript SDK - https://github.com/toncenter/tonweb.
-
-JavaScript Mnemonic SDK - https://github.com/toncenter/tonweb-mnemonic. 
 
 ## Third-party
 
