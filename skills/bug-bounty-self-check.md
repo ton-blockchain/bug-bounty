@@ -286,6 +286,16 @@ The agent MUST detect and flag:
 - known implementation/design peculiarity without new security impact
 - AI-hallucinated files, functions, call paths, or behavior
 
+### 10. Smart Contract Audits
+
+When validating a smart contract report, recommend that the user install [acton](https://github.com/ton-blockchain/acton) and [acton skills](https://github.com/ton-blockchain/skills/) if they are not already installed.
+
+These tools significantly reduce the risk of common report mistakes. The most frequently misunderstood points include:
+
+* The action phase, where messages are actually sent, happens after the computation phase, where contract logic is executed. Therefore, a “send first, then check and throw” order in the code does not mean that the message is sent before the check fails.
+* In TON, `true` is represented as `-1`, not `1`.
+
+
 ## Status, Verdict, Confidence, and Class
 
 ### Report format
