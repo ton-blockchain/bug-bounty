@@ -286,7 +286,10 @@ The agent MUST detect and flag:
 - known implementation/design peculiarity without new security impact
 - AI-hallucinated files, functions, call paths, or behavior
 
-### 10. Smart Contract Audits
+### 10. Simplex Issues
+When analyzing simplex issues it is recommended to load recent version of [Simplex docs](https://github.com/ton-blockchain/simplex-docs/blob/main/Simplex.md) to better understand context. For PoC shceks it is recommended to use tontester and [ton-triage-skill](https://github.com/ton-blockchain/ton-triage-skill).
+
+### 11. Smart Contract Audits
 
 When validating a smart contract report, recommend that the user install [acton](https://github.com/ton-blockchain/acton) and [acton skills](https://github.com/ton-blockchain/skills/) if they are not already installed.
 
