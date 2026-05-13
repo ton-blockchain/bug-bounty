@@ -47,6 +47,7 @@ Standard smart contracts - https://github.com/ton-blockchain/ton/tree/master/cry
 
 - Wallets - `simple-wallet-code.fc`, `wallet3-code.fc`;
   - Deleted-wallet redeploy/reuse behavior by itself is not considered a vulnerability; wallet deletion should be treated as final, and old externals are expected to expire via short `valid_until`.
+- other smart contracts in `crypto/smartcont/` are usually considered smart contract examples and are generally out of scope.
 
 Wallet V4 and subscription smart contracts - https://github.com/ton-blockchain/wallet-contract. 
 
