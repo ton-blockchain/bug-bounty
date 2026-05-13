@@ -55,7 +55,7 @@ Multisig - https://github.com/ton-blockchain/multisig-contract
 
 Nominator pool - https://github.com/ton-blockchain/nominator-pool.
 
-Fungible, Non-Fungible, Semi-Fungible tokens - https://github.com/ton-blockchain/token-contract. 
+Fungible, Non-Fungible, Semi-Fungible tokens - https://github.com/ton-blockchain/token-contract . Note that sale, ICO, and other supplementary contracts are provided as examples only and should not be considered reference implementations. Issues in those contracts are out of scope.
 
 TON DNS - https://github.com/ton-blockchain/dns-contract
 
