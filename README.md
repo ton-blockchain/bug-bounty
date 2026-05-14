@@ -53,7 +53,8 @@ Wallet V4 and subscription smart contracts - https://github.com/ton-blockchain/w
 
 Multisig - https://github.com/ton-blockchain/multisig-contract
 
-Nominator pool - https://github.com/ton-blockchain/nominator-pool.
+Nominator pool - https://github.com/ton-blockchain/nominator-pool .
+For nominator pool 2 frequently arising reports are not considered as issues: [Stake withdrawal for low nominator stakes](https://github.com/ton-blockchain/nominator-pool/issues/15), [Stake withdrawal in anticipation of slashing losses may shift losses to other nominators](https://github.com/ton-blockchain/nominator-pool/issues/14)
 
 Fungible, Non-Fungible, Semi-Fungible tokens - https://github.com/ton-blockchain/token-contract . Note that sale, ICO, and other supplementary contracts are provided as examples only and should not be considered reference implementations. Issues in those contracts are out of scope.
 
