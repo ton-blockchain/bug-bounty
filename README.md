@@ -26,6 +26,7 @@ The following are generally out of scope or will not be accepted without a clear
 - Crashes or odd behavior in local tools, debug-only paths, or other user-side workflows that do not affect normal node/service/blockchain operation.
 - Behavior with no realistic manifestation or exploitation path in normal network operation.
 - Long-known implementation or design peculiarities, unless you demonstrate a new security impact.
+- Issues related to misbehaving validator ability to force other validators to do useless work: validate and/or re-broadcast incorrect candidates.
 
 Priority list:
 
