@@ -17,6 +17,9 @@ _We reserve the right not to review some reports._
 The following are generally out of scope or will not be accepted without a clear escalation to a real security impact on normal network/service operation:
 
 - Issues that require the attacker to already control the local host, local files/libraries, runtime parameters, environment variables, startup flags, or other trusted operator inputs.
+- Issues that require the attacker to already control majority of honest validators, including issues related to malformed blocks signed by the quorum, incorrect network config parameters (require validators voting for them to be accepted)
+- Issues that require the attacker to know leaked private information: private key for different public keys (like ADNL, wallets, block signing keys), keys for control-interface, FullNodeMaster, etc
+- General advices on how to write blockchains, smartcontracts or complaints that TON has it's own peculiarities that require different approach then bitcoin, ethereum, etc
 - Client-side SDK misuse by the integrating application, including loading attacker-controlled local code/data, when no privilege boundary is crossed.
 - Reports against components not listed below, or against stubs / preliminary-testing implementations / deprecated components not intended for production use.
 - Input-validation, error-message, or status-code hygiene issues (for example 5xx vs 4xx/405) when the service remains healthy.
