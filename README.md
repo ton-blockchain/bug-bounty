@@ -27,8 +27,9 @@ The following are generally out of scope or will not be accepted without a clear
 - Behavior with no realistic manifestation or exploitation path in normal network operation.
 - Long-known implementation or design peculiarities, unless you demonstrate a new security impact.
 - Issues related to misbehaving validator ability to force other validators to do useless work: validate and/or re-broadcast incorrect candidates.
+- Issues related to future timestamps not fitting corresponding uints, including 2038/2106 years problems
 
-Priority list:
+# Priority list:
 
 ## TON Blockchain Core (C++)
 
