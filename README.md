@@ -41,6 +41,8 @@ The testnet branch is considered experimental and often undergoes tests and audi
 
 *Extracurrency* related bugs are considered but has low priority in terms of processing speed and bounty rewards, due to not being practically deployed on mainnet (with not firm plans about them).
 
+*MisbehaviorProof* absence in Simplex is known and is a low-priority work-in-progress. It is not critical part for current Simplex operation and expected to be implemented as defence-in-depth. Reports about MisbehaviorProof are not accepted.
+
 ## Smart Contracts (FunC)
 
 Standard smart contracts - https://github.com/ton-blockchain/ton/tree/master/crypto/smartcont:
