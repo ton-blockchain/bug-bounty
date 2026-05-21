@@ -46,9 +46,10 @@ The testnet branch is considered experimental and often undergoes tests and audi
 Standard smart contracts - https://github.com/ton-blockchain/ton/tree/master/crypto/smartcont:
 
 - Network config - `config-code.fc`;
+  - Known peculiarities of Config contract is that if validator voted positively for some proposal his vote (under specific conditions) can be replayed in different rounds without active validator participation.
 
 - Elector - `elector-code.fc`;
-  - Known peculiarities of Elector are not bounty issues by themselves, including `max_stake`-related stake accounting/recovery behavior and recover-stake bounce semantics.
+  - Known peculiarities of Elector are not bounty issues by themselves, including `max_stake`-related stake accounting/recovery behavior and ignoring bounce messages semantics. Also reports for elector-code issues should take into account that `election_id` is different each round, thus signatures for slashing fines can not be replayed.
 
 - Wallets - `simple-wallet-code.fc`, `wallet3-code.fc`;
   - Deleted-wallet redeploy/reuse behavior by itself is not considered a vulnerability; wallet deletion should be treated as final, and old externals are expected to expire via short `valid_until`.
