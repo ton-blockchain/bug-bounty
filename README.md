@@ -44,6 +44,13 @@ The testnet branch is considered experimental and often undergoes tests and audi
 
 *MisbehaviorProof* absence in Simplex is known and is a low-priority work-in-progress. It is not critical part for current Simplex operation and expected to be implemented as defence-in-depth. Reports about MisbehaviorProof are not accepted.
 
+Explicitly out-of-scope:
+- issues related to non-final LS
+- issues related to Ton Storage and rldp-http-proxy
+- issues related to blockchain explorer (C++ based from monorepo)
+- issues related to incorrect configuration of validator control interface
+
+
 ## Smart Contracts (FunC)
 
 Standard smart contracts - https://github.com/ton-blockchain/ton/tree/master/crypto/smartcont:
