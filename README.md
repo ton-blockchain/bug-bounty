@@ -52,6 +52,7 @@ Explicitly out-of-scope:
 - issues related to Ton Storage and rldp-http-proxy
 - issues related to blockchain explorer (C++ based from monorepo)
 - issues related to incorrect configuration of validator control interface
+- ability to crash libemulator by supplying incorrect data
 
 
 ## Smart Contracts (FunC)
