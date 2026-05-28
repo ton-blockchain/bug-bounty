@@ -44,6 +44,8 @@ The testnet branch is considered experimental and often undergoes tests and audi
 
 *MisbehaviorProof* absence in Simplex is known and is a low-priority work-in-progress. It is not critical part for current Simplex operation and expected to be implemented as defence-in-depth. Reports about MisbehaviorProof are not accepted.
 
+Reports about TVM issues, in particular "crash due to some OPCODE usage", "exponential CPU/Mem load over linear gas usage", "gas undercharging" and everything else related to Computation Phase execution strictly requires PoC in Fift, reports without such PoC will be instantaneously rejected. Use [TVM Fift Hypothesis Proover](https://github.com/ton-blockchain/ton-triage-skill/tree/main/tvm-fift-hypothesis-proving) skill to craft such PoCs. Reports related to DEBUG opcodes are out of scope. Only reports for latest `global_version` are accepted.
+
 Explicitly out-of-scope:
 - issues related to non-final LS
 - issues related to Ton Storage and rldp-http-proxy
