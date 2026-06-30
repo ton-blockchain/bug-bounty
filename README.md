@@ -71,7 +71,7 @@ Standard smart contracts - https://github.com/ton-blockchain/ton/tree/master/cry
 
 Wallet V4 and subscription smart contracts - https://github.com/ton-blockchain/wallet-contract. Wallet plugins (for all versions) are provided as examples and are out of the scope.
 
-Multisig - https://github.com/ton-blockchain/multisig-contract
+Multisig V2 - https://github.com/ton-blockchain/multisig-contract-v2
 
 Nominator pool - https://github.com/ton-blockchain/nominator-pool .
 For nominator pool 2 frequently arising reports are not considered as issues: [Stake withdrawal for low nominator stakes](https://github.com/ton-blockchain/nominator-pool/issues/15), [Stake withdrawal in anticipation of slashing losses may shift losses to other nominators](https://github.com/ton-blockchain/nominator-pool/issues/14)
