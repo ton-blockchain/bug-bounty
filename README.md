@@ -73,6 +73,8 @@ Wallet V4 and subscription smart contracts - https://github.com/ton-blockchain/w
 
 Multisig V2 - https://github.com/ton-blockchain/multisig-contract-v2
 
+Highload V3 - https://github.com/ton-blockchain/highload-wallet-contract-v3
+
 Nominator pool - https://github.com/ton-blockchain/nominator-pool .
 For nominator pool 2 frequently arising reports are not considered as issues: [Stake withdrawal for low nominator stakes](https://github.com/ton-blockchain/nominator-pool/issues/15), [Stake withdrawal in anticipation of slashing losses may shift losses to other nominators](https://github.com/ton-blockchain/nominator-pool/issues/14)
 

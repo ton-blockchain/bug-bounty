@@ -69,6 +69,13 @@ If that workflow is unavailable and the report does not already include convinci
 - Third-party TON services MUST be redirected to their owners. Do not validate them as TON bug bounty submissions.
 - Catchain is out of scope for this self-check.
 - FunC and Fift compiler reports are in scope only if the researcher demonstrates critical impact during normal node operation.
+- Multisig V1 and Highload wallet V1 and V2
+  - crypto/smartcont/highload-wallet.fif
+  - crypto/smartcont/highload-wallet-code.fc
+  - crypto/smartcont/highload-wallet-v2.fif
+  - crypto/smartcont/highload-wallet-v2-code.fc
+  - crypto/smartcont/highload-wallet-v2-one.fif
+  - crypto/smartcont/multisig-code.fc
 
 ## Repository Freshness Requirements
 
