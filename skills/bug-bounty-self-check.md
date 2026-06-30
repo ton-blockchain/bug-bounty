@@ -46,7 +46,7 @@ Use the default branch of each repository, usually `master` or `main`, unless th
 - TON core testnet branch: use when the report explicitly targets testnet
 - Standard smart contracts in TON core: `https://github.com/ton-blockchain/ton/tree/master/crypto/smartcont`
 - Wallet V4 and subscription smart contracts: `https://github.com/ton-blockchain/wallet-contract`
-- Multisig: `https://github.com/ton-blockchain/multisig-contract`
+- Multisig V2: `https://github.com/ton-blockchain/multisig-contract-v2`
 - Nominator pool: `https://github.com/ton-blockchain/nominator-pool`
 - Fungible, non-fungible, and semi-fungible tokens: `https://github.com/ton-blockchain/token-contract`
 - TON DNS: `https://github.com/ton-blockchain/dns-contract`
