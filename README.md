@@ -19,7 +19,7 @@ The following are generally out of scope or will not be accepted without a clear
 - Issues that require the attacker to already control the local host, local files/libraries, runtime parameters, environment variables, startup flags, or other trusted operator inputs.
 - Issues that require the attacker to already control majority of honest validators, including issues related to malformed blocks signed by the quorum, incorrect network config parameters (require validators voting for them to be accepted). Often under such conditions errors cause CHECK() and node crash: this is intended behavior, where under malfunctioning quorum it is better to halt rather then continue operation.
 - Issues that require the attacker to know leaked private information: private key for different public keys (like ADNL, wallets, block signing keys), keys for control-interface, FullNodeMaster, etc
-- General advices on how to write blockchains, smartcontracts or complaints that TON has it's own peculiarities that require different approach then bitcoin, ethereum, etc
+- General advices on how to write blockchains, smartcontracts, or complaints that TON has it's own peculiarities that require different approach then bitcoin, ethereum, etc
 - Client-side SDK misuse by the integrating application, including loading attacker-controlled local code/data, when no privilege boundary is crossed.
 - Reports against components not listed below, or against stubs / preliminary-testing implementations / deprecated components not intended for production use.
 - Input-validation, error-message, or status-code hygiene issues (for example 5xx vs 4xx/405) when the service remains healthy.
@@ -29,7 +29,7 @@ The following are generally out of scope or will not be accepted without a clear
 - Issues related to misbehaving validator ability to force other validators to do useless work: validate and/or re-broadcast incorrect candidates.
 - Issues related to future timestamps not fitting corresponding uints, including 2038/2106 years problems
 - Sybil attack for public overlay
-- TON-ETH, TON-BSC and TON-Eth-token bridges are [deprecated](https://t.me/tonstatus/215) and are out of the scope now.
+- TON-ETH, TON-BSC, and TON-Eth-token bridges are [deprecated](https://t.me/tonstatus/215) and are out of the scope now.
 
 # Priority list:
 
@@ -49,7 +49,7 @@ Reports about TVM issues, in particular "crash due to some OPCODE usage", "expon
 
 Explicitly out-of-scope:
 - issues related to non-final LS
-- issues related to Ton Storage and rldp-http-proxy
+- issues related to Ton Storage, Payment Channels, and rldp-http-proxy
 - issues related to blockchain explorer (C++ based from monorepo)
 - issues related to incorrect configuration of validator control interface
 - ability to crash libemulator by supplying incorrect data
