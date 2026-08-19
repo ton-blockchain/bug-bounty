@@ -4,7 +4,7 @@ If you find a critical bug or vulnerability in the TON Blockchain (in the C++ co
 
 We are interested in critical vulnerabilities: crash, loss/theft of coins, etc.
 
-You can target a reward of up to $100,000 in Grams or USDt for vulnerability, depending on the severity; large bounties for severe vulnerabilities are given with 1 year lock-up.
+You can target a reward of up to $100,000 in Grams or USDt for a vulnerability, depending on the severity; large bounties for severe vulnerabilities are given with 1 year lock-up.
 
 Let's perfect the safety and security of TON together!
 
@@ -24,9 +24,9 @@ The following are generally out of scope or will not be accepted without a clear
 - Any attacks initiated by a validator.
 
 - Issues that require the attacker to already control the local host, local files/libraries, runtime parameters, environment variables, startup flags, or other trusted operator inputs.
-- Issues that require the attacker to already control majority of honest validators, including issues related to malformed blocks signed by the quorum, incorrect network config parameters (require validators voting for them to be accepted). Often under such conditions errors cause CHECK() and node crash: this is intended behavior, where under malfunctioning quorum it is better to halt rather then continue operation.
-- Issues that require the attacker to know leaked private information: private key for different public keys (like ADNL, wallets, block signing keys), keys for control-interface, FullNodeMaster, etc
-- General advices on how to write blockchains, smartcontracts, or complaints that TON has it's own peculiarities that require different approach then bitcoin, ethereum, etc
+- Issues that require the attacker to already control majority of honest validators, including issues related to malformed blocks signed by the quorum, incorrect network config parameters (require validators voting for them to be accepted). Often under such conditions errors cause CHECK() and node crash: this is intended behavior, where under malfunctioning quorum it is better to halt rather than continue operation.
+- Issues that require the attacker to know leaked private information: private key for different public keys (like ADNL, wallets, block signing keys), keys for control-interface, FullNodeMaster, etc.
+- General advice on how to write blockchains, smart contracts, or complaints that TON has its own peculiarities that require different approach than bitcoin, ethereum, etc.
 - Client-side SDK misuse by the integrating application, including loading attacker-controlled local code/data, when no privilege boundary is crossed.
 - Reports against components not listed below, or against stubs / preliminary-testing implementations / deprecated components not intended for production use.
 - Input-validation, error-message, or status-code hygiene issues (for example 5xx vs 4xx/405) when the service remains healthy.
@@ -47,13 +47,13 @@ https://github.com/ton-blockchain/ton.
 
 Simplex, Validator Node, Full Node, DHT Node. 
 
-The testnet branch is considered experimental and often undergoes tests and audits. We are interested in identifying problems at this stage, thus bugs in the testnet branch are accepted, in some cases report review maybe postponed till the end of audit/tests (you will be immediately notified upon report submission).
+The testnet branch is considered experimental and often undergoes tests and audits. We are interested in identifying problems at this stage, thus bugs in the testnet branch are accepted, in some cases report review may be postponed till the end of audit/tests (you will be immediately notified upon report submission).
 
-*Extracurrency* related bugs are considered but has low priority in terms of processing speed and bounty rewards, due to not being practically deployed on mainnet (with not firm plans about them).
+*Extracurrency* related bugs are considered but have low priority in terms of processing speed and bounty rewards, due to not being practically deployed on mainnet (with no firm plans about them).
 
 *MisbehaviorProof* absence in Simplex is known and is a low-priority work-in-progress. It is not critical part for current Simplex operation and expected to be implemented as defence-in-depth. Reports about MisbehaviorProof are not accepted.
 
-Reports about TVM issues, in particular "crash due to some OPCODE usage", "exponential CPU/Mem load over linear gas usage", "gas undercharging" and everything else related to Computation Phase execution strictly requires PoC in Fift, reports without such PoC will be instantaneously rejected. Use [TVM Fift Hypothesis Proover](https://github.com/ton-blockchain/ton-triage-skill/tree/main/tvm-fift-hypothesis-proving) skill to craft such PoCs. Reports related to DEBUG opcodes are out of scope. Only reports for latest `global_version` are accepted.
+Reports about TVM issues, in particular "crash due to some OPCODE usage", "exponential CPU/Mem load over linear gas usage", "gas undercharging" and everything else related to Computation Phase execution strictly requires PoC in Fift, reports without such PoC will be instantaneously rejected. Use [TVM Fift Hypothesis Prover](https://github.com/ton-blockchain/ton-triage-skill/tree/main/tvm-fift-hypothesis-proving) skill to craft such PoCs. Reports related to DEBUG opcodes are out of scope. Only reports for latest `global_version` are accepted.
 
 Explicitly out-of-scope:
 - issues related to non-final LS
@@ -71,7 +71,7 @@ Explicitly out-of-scope:
 Standard smart contracts - https://github.com/ton-blockchain/ton/tree/master/crypto/smartcont:
 
 - Network config - `config-code.fc`;
-  - Known peculiarities of Config contract is that if validator voted positively for some proposal his vote (under specific conditions) can be replayed in different rounds without active validator participation.
+  - Known peculiarities of Config contract is that if a validator voted positively for some proposal, his vote (under specific conditions) can be replayed in different rounds without active validator participation.
 
 - Elector - `elector-code.fc`;
   - Known peculiarities of Elector are not bounty issues by themselves, including `max_stake`-related stake accounting/recovery behavior and ignoring bounce messages semantics. Also reports for elector-code issues should take into account that `election_id` is different each round, thus signatures for slashing fines can not be replayed.
@@ -105,7 +105,7 @@ Python SDK - https://github.com/toncenter/pytonlib.
 
 All issues related to sites and frontend should be sent to [hackenproof page](https://hackenproof.com/programs/ton-society).
 
-Note that the standard recommendations from the OWASP (e.g. adding the recommended HTTP headers) will not be highly appreciated or will rejected.
+Note that the standard recommendations from the OWASP (e.g. adding the recommended HTTP headers) will not be highly appreciated or will be rejected.
 
 The most valuable are real vulnerabilities and critical bugs.
 
