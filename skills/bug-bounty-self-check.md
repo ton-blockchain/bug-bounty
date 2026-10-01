@@ -47,7 +47,7 @@ Use the default branch of each repository, usually `master` or `main`, unless th
 - Standard smart contracts in TON core: `https://github.com/ton-blockchain/ton/tree/master/crypto/smartcont`
 - Wallet V4 and subscription smart contracts: `https://github.com/ton-blockchain/wallet-contract`
 - Multisig V2: `https://github.com/ton-blockchain/multisig-contract-v2`
-- Nominator pool: `https://github.com/ton-blockchain/nominator-pool`
+- Nominator pool V2: `https://github.com/ton-blockchain/nominator-pool-v2`
 - Fungible, non-fungible, and semi-fungible tokens: `https://github.com/ton-blockchain/token-contract`
 - TON DNS: `https://github.com/ton-blockchain/dns-contract`
 - MyTonCtrl validator tools: `https://github.com/ton-blockchain/mytonctrl`
@@ -68,6 +68,8 @@ If that workflow is unavailable and the report does not already include convinci
 - Frontend reports MUST be redirected to HackenProof. Do not validate them in this flow except to explain the redirect.
 - Third-party TON services MUST be redirected to their owners. Do not validate them as TON bug bounty submissions.
 - Catchain is out of scope for this self-check.
+- Validator crashes other validator.
+- Validator crashes other node.
 - FunC and Fift compiler reports are in scope only if the researcher demonstrates critical impact during normal node operation.
 - Multisig V1 and Highload wallet V1 and V2
   - crypto/smartcont/highload-wallet.fif
@@ -76,6 +78,9 @@ If that workflow is unavailable and the report does not already include convinci
   - crypto/smartcont/highload-wallet-v2-code.fc
   - crypto/smartcont/highload-wallet-v2-one.fif
   - crypto/smartcont/multisig-code.fc
+- crypto/func/*
+- Acton framework: `https://github.com/ton-blockchain/acton`
+- Nominator pool: `https://github.com/ton-blockchain/nominator-pool`
 
 ## Repository Freshness Requirements
 
@@ -199,7 +204,6 @@ For claims of:
 - consensus stop
 - validator crashes validator
 - any node crashes other node
-- validator crashes other nodes
 
 require reproduction with `ton-bug-triage` or convincing included artifacts from that workflow. If this evidence is missing, set status to `partially correct` at best, unless the claim is otherwise clearly false.
 
@@ -294,7 +298,7 @@ The agent MUST detect and flag:
 - AI-hallucinated files, functions, call paths, or behavior
 
 ### 10. Simplex Issues
-When analyzing simplex issues it is recommended to load recent version of [Simplex docs](https://github.com/ton-blockchain/simplex-docs/blob/main/Simplex.md) to better understand context. For PoC shceks it is recommended to use tontester and [ton-triage-skill](https://github.com/ton-blockchain/ton-triage-skill).
+When analyzing simplex issues it is recommended to load recent version of [Simplex docs](https://github.com/ton-blockchain/simplex-docs/blob/main/Simplex.md) to better understand context. For PoC checks it is recommended to use tontester and [ton-triage-skill](https://github.com/ton-blockchain/ton-triage-skill).
 
 ### 11. Smart Contract Audits
 
@@ -350,8 +354,6 @@ Use integers from 0 to 100.
 Choose one primary class from this list, or use `other: <specific class>` if none fits.
 
 - `any node crashes other node`
-- `validator crashes validator`
-- `validator crashes other nodes`
 - `consensus halt`
 - `consensus split`
 - `block production halt`
@@ -372,11 +374,16 @@ Choose one primary class from this list, or use `other: <specific class>` if non
 - `signature/auth bypass`
 - `frontend redirect to HackenProof`
 - `third-party redirect`
+- `out-of-scope acton`
 - `out-of-scope local-only`
 - `out-of-scope known peculiarity`
 - `out-of-scope catchain`
 - `out-of-scope FunC/Fift`
 - `out-of-scope unsupported component`
+- `out-of-scope nominator-pool`
+- `out-of-scope crypto/func`
+- `out-of-scope validator crashes validator`
+- `out-of-scope validator crashes other nodes`
 - `already fixed`
 - `not attacker controlled`
 - `parser crash without network path`
