@@ -24,9 +24,9 @@ The following are generally out of scope or will not be accepted without a clear
 - Any attacks initiated by a validator.
 
 - Issues that require the attacker to already control the local host, local files/libraries, runtime parameters, environment variables, startup flags, or other trusted operator inputs.
-- Issues that require the attacker to already control majority of honest validators, including issues related to malformed blocks signed by the quorum, incorrect network config parameters (require validators voting for them to be accepted). Often under such conditions errors cause CHECK() and node crash: this is intended behavior, where under malfunctioning quorum it is better to halt rather then continue operation.
+- Issues that require the attacker to already control majority of honest validators, including issues related to malformed blocks signed by the quorum, incorrect network config parameters (require validators voting for them to be accepted). Often under such conditions errors cause CHECK() and node crash: this is intended behavior, where under malfunctioning quorum it is better to halt rather than continue operation.
 - Issues that require the attacker to know leaked private information: private key for different public keys (like ADNL, wallets, block signing keys), keys for control-interface, FullNodeMaster, etc
-- General advices on how to write blockchains, smartcontracts, or complaints that TON has it's own peculiarities that require different approach then bitcoin, ethereum, etc
+- General advices on how to write blockchains, smartcontracts, or complaints that TON has it's own peculiarities that require different approach than bitcoin, ethereum, etc
 - Client-side SDK misuse by the integrating application, including loading attacker-controlled local code/data, when no privilege boundary is crossed.
 - Reports against components not listed below, or against stubs / preliminary-testing implementations / deprecated components not intended for production use.
 - Input-validation, error-message, or status-code hygiene issues (for example 5xx vs 4xx/405) when the service remains healthy.
@@ -34,8 +34,8 @@ The following are generally out of scope or will not be accepted without a clear
 - Behavior with no realistic manifestation or exploitation path in normal network operation.
 - Long-known implementation or design peculiarities, unless you demonstrate a new security impact.
 - Issues related to misbehaving validator ability to force other validators to do useless work: validate and/or re-broadcast incorrect candidates.
-- Issues related to future timestamps not fitting corresponding uints, including 2038/2106 years problems
-- Sybil attack for public overlay
+- Issues related to future timestamps not fitting corresponding uints, including 2038/2106 years problems.
+- Sybil attack for public overlay.
 - TON-ETH, TON-BSC, and TON-Eth-token bridges are [deprecated](https://t.me/tonstatus/215) and are out of the scope now.
 
 
@@ -92,6 +92,8 @@ For nominator pool 2 frequently arising reports are not considered as issues: [S
 Fungible, Non-Fungible, Semi-Fungible tokens - https://github.com/ton-blockchain/token-contract . Note that sale, ICO, and other supplementary contracts are provided as examples only and should not be considered reference implementations. Issues in those contracts are out of scope.
 
 TON DNS - https://github.com/ton-blockchain/dns-contract
+
+Explicitly out-of-scope: all reports located in `crypto/func/*`.
 
 ## Python
 
