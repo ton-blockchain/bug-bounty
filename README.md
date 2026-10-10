@@ -34,8 +34,8 @@ The following are generally out of scope or will not be accepted without a clear
 - Behavior with no realistic manifestation or exploitation path in normal network operation.
 - Long-known implementation or design peculiarities, unless you demonstrate a new security impact.
 - Issues related to misbehaving validator ability to force other validators to do useless work: validate and/or re-broadcast incorrect candidates.
-- Issues related to future timestamps not fitting corresponding uints, including 2038/2106 years problems
-- Sybil attack for public overlay
+- Issues related to future timestamps not fitting corresponding uints, including 2038/2106 years problems.
+- Sybil attack for public overlay.
 - TON-ETH, TON-BSC, and TON-Eth-token bridges are [deprecated](https://t.me/tonstatus/215) and are out of the scope now.
 
 
@@ -86,12 +86,25 @@ Multisig V2 - https://github.com/ton-blockchain/multisig-contract-v2
 
 Highload V3 - https://github.com/ton-blockchain/highload-wallet-contract-v3
 
-Nominator pool - https://github.com/ton-blockchain/nominator-pool .
-For nominator pool 2 frequently arising reports are not considered as issues: [Stake withdrawal for low nominator stakes](https://github.com/ton-blockchain/nominator-pool/issues/15), [Stake withdrawal in anticipation of slashing losses may shift losses to other nominators](https://github.com/ton-blockchain/nominator-pool/issues/14)
+For nominator pool frequently arising reports are not considered as issues: 
+- [Stake withdrawal for low nominator stakes](https://github.com/ton-blockchain/nominator-pool/issues/15);
+- [Stake withdrawal in anticipation of slashing losses may shift losses to other nominators](https://github.com/ton-blockchain/nominator-pool/issues/14)
+  
+For nominator pool 2 frequently arising reports are not considered as issues: 
+- [RecoverStakeUnrestricted allows third parties to trigger stake recovery](https://github.com/ton-blockchain/nominator-pool-v2/issues/23)
+- [Unhandled RecoverStakeError paths in Nominator Pool V2 can deadlock round rotation and permanently freeze nominator funds.](https://github.com/ton-blockchain/nominator-pool-v2/issues/24)
+- [mulDivQuiet does not check whether the divisor is zero](https://github.com/ton-blockchain/nominator-pool-v2/issues/25)
+- [Denial of Service on Pool Deposits due to Dictionary Depth Limit (MAX_NM_DEPTH = 15) in contracts/storage.tolk](https://github.com/ton-blockchain/nominator-pool-v2/issues/26)
+- [Unhandled Division by Zero in DepositMessage When nominatorsAmount == 0 in contracts/utils.tolk](https://github.com/ton-blockchain/nominator-pool-v2/issues/27)
+- [https://github.com/ton-blockchain/nominator-pool-v2/issues/28](https://github.com/ton-blockchain/nominator-pool-v2/issues/28)
+- [Unhandled Integer Underflow in get_nominator_data Causing Off-Chain Getter Crash](https://github.com/ton-blockchain/nominator-pool-v2/issues/29)
+
 
 Fungible, Non-Fungible, Semi-Fungible tokens - https://github.com/ton-blockchain/token-contract . Note that sale, ICO, and other supplementary contracts are provided as examples only and should not be considered reference implementations. Issues in those contracts are out of scope.
 
 TON DNS - https://github.com/ton-blockchain/dns-contract
+
+Explicitly out-of-scope: all reports located in `crypto/func/*` and https://github.com/ton-blockchain/acton
 
 ## Python
 
