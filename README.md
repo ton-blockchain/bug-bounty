@@ -41,6 +41,8 @@ The following are generally out of scope or will not be accepted without a clear
 
 # Priority list:
 
+For the current source repository list and report validation workflow, see the [TON Bug Bounty Self Check](skills/bug-bounty-self-check.md).
+
 ## TON Blockchain Core (C++)
 
 https://github.com/ton-blockchain/ton.
@@ -113,6 +115,10 @@ MyTonCtrl validator tools - https://github.com/ton-blockchain/mytonctrl.
 HTTP API - https://github.com/toncenter/ton-http-api, https://toncenter.com.
 
 Python SDK - https://github.com/toncenter/pytonlib.
+
+## Toncenter Indexer
+
+https://github.com/toncenter/ton-indexer.
 
 ## Frontend
 
