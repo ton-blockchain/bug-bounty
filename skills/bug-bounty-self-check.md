@@ -68,6 +68,7 @@ If that workflow is unavailable and the report does not already include convinci
 - Frontend reports MUST be redirected to HackenProof. Do not validate them in this flow except to explain the redirect.
 - Third-party TON services MUST be redirected to their owners. Do not validate them as TON bug bounty submissions.
 - Catchain is out of scope for this self-check.
+- RLDP2 (Reliable Large Datagram Protocol 2).
 - Validator crashes other validator.
 - Validator crashes other node.
 - FunC and Fift compiler reports are in scope only if the researcher demonstrates critical impact during normal node operation.
