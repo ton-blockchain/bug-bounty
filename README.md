@@ -65,6 +65,7 @@ Explicitly out-of-scope:
 - FunC compiler
 - Fift compiler
 - Catchain 1.0
+- RLDP2 (Reliable Large Datagram Protocol 2)
 
 ## Smart Contracts (FunC)
 
