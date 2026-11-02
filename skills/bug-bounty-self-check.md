@@ -51,9 +51,6 @@ Use the default branch of each repository, usually `master` or `main`, unless th
 - Fungible, non-fungible, and semi-fungible tokens: `https://github.com/ton-blockchain/token-contract`
 - TON DNS: `https://github.com/ton-blockchain/dns-contract`
 - MyTonCtrl validator tools: `https://github.com/ton-blockchain/mytonctrl`
-- Toncenter HTTP API: `https://github.com/toncenter/ton-http-api`
-- Toncenter indexer: `https://github.com/toncenter/ton-indexer`
-- Pytonlib: `https://github.com/toncenter/pytonlib`
 
 ### Related skill for validator and consensus reproduction
 
@@ -82,6 +79,7 @@ If that workflow is unavailable and the report does not already include convinci
 - crypto/func/*
 - Acton framework: `https://github.com/ton-blockchain/acton`
 - Nominator pool: `https://github.com/ton-blockchain/nominator-pool`
+- TonCenter
 
 ## Repository Freshness Requirements
 
@@ -250,7 +248,6 @@ Reject or warn for:
 
 Known peculiarities are not accepted as bounty issues unless the report demonstrates a new security impact. This includes Elector `max_stake` accounting/recovery behavior, Elector recover-stake bounce semantics, and deleted-wallet redeploy/reuse behavior.
 
-Toncenter HTTP API and Toncenter indexer reports may be eligible for wrong balance or index data, authentication issues, private data exposure, or critical service bugs. Status-code hygiene such as 500 instead of 4xx/405 while the service remains healthy MUST be rejected.
 
 ### 8. Validate report completeness
 
