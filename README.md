@@ -68,6 +68,7 @@ Explicitly out-of-scope:
 - Fift compiler
 - Catchain 1.0
 - RLDP2 (Reliable Large Datagram Protocol 2)
+- TonCenter
 
 ## Smart Contracts (FunC)
 
@@ -113,13 +114,7 @@ Explicitly out-of-scope: all reports located in `crypto/func/*` and https://gith
 
 MyTonCtrl validator tools - https://github.com/ton-blockchain/mytonctrl.
 
-HTTP API - https://github.com/toncenter/ton-http-api, https://toncenter.com.
-
 Python SDK - https://github.com/toncenter/pytonlib.
-
-## Toncenter Indexer
-
-https://github.com/toncenter/ton-indexer.
 
 ## Frontend
 
